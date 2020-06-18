@@ -8,7 +8,7 @@ gpgcheck = 1
 gpgkey = https://repos.influxdata.com/influxdb.key
 EOF
 
-sudo yum install telegraf -y
+sudo yum -y install telegraf
 sudo mkdir -p /etc/telegraf
 sudo cp telegraf_centower.conf /etc/telegraf/telegraf.conf
 sudo systemctl start telegraf
